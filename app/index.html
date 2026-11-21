@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GTA VI Trophy Guide — Leonida Checklist</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div>
+    <p class="kicker">Grand Theft Auto VI &middot; PlayStation 5 &middot; 55 trophies</p>
+    <h1>Leonida Trophy Guide</h1>
+    <p class="lede">Every trophy, its official name and description, a guide in our own words with its sources, and a tracker that remembers what you have earned. Works fully offline — no network, no account, nothing leaves your browser.</p>
+  </div>
+  <div class="progress-card" id="progressCard">
+    <div class="big-number"><span id="earnedCount">0</span><span class="of">/ 55</span></div>
+    <div class="bar"><div class="bar-fill" id="barFill" style="width:0%"></div></div>
+    <p id="progressText">0 of 55 earned &middot; 0% — the platinum is 54 trophies away.</p>
+    <p class="grades-line" id="gradesLine"></p>
+  </div>
+</header>
+
+<section class="roadmap" id="roadmap">
+  <h2>Roadmap to the platinum</h2>
+  <p class="section-note">One playthrough, no online play needed, roughly 200–250 hours. Story missions can be replayed, so mission trophies cannot be missed — the only trophy guides flag as possibly missable is Positive Mental Attitude.</p>
+  <ol class="stages">
+    <li><strong>Stage 1 — Play the story.</strong> Chapters 1–4 and the finale. Story trophies (13) pop as you finish chapters and named missions. Take the optional Chapter 4 mission that opens bank vaults.</li>
+    <li><strong>Stage 2 — Strangers, as they open.</strong> Finish each stranger strand in the chapter it appears (Andy, Kenton, Billy, Randy, Tyrone). Strands can lock as the story moves on — do not leave them for the post-game. Eight strands earn the silver.</li>
+    <li><strong>Stage 3 — Meditate early.</strong> Hit every meditation spot as you explore (18). This is the one possibly missable trophy — clear each spot the first time you pass it.</li>
+    <li><strong>Stage 4 — Activities and skills.</strong> Shooting ranges (42 golds), stunts (250, keep going to 300 for 100%), races, drone races, fishing, arcade, hunting, bowling and the rest. Try all 9 activity types once for Master of None.</li>
+    <li><strong>Stage 5 — Collectibles and cleanup.</strong> Cards (3 of 18 sets), WAiNK It (100), vehicles (100), garages (8), all 52 areas, challenges (50, then 70 for 100%), bank vaults (5, then all 8 for 100%), then the 100% checklist for A Long Road — and the platinum.</li>
+  </ol>
+  <p class="missable-note" id="missableNote"></p>
+</section>
+
+<div class="controls" id="controls">
+  <label class="search">Search <input id="search" type="search" placeholder="trophy, mission, place…" autocomplete="off"></label>
+  <div class="filters" id="kindFilters" role="group" aria-label="Filter by kind">
+    <button type="button" data-kind="all" class="active">All</button>
+    <button type="button" data-kind="story">Story</button>
+    <button type="button" data-kind="missable">Missable</button>
+    <button type="button" data-kind="collectibles">Collectibles</button>
+    <button type="button" data-kind="activities">Activities</button>
+    <button type="button" data-kind="online">Online</button>
+  </div>
+  <label>Grade <select id="grade"><option value="all">All grades</option><option value="platinum">Platinum</option><option value="gold">Gold</option><option value="silver">Silver</option><option value="bronze">Bronze</option></select></label>
+  <label class="check"><input id="spoiler" type="checkbox"> Spoiler-free (hide story trophies until earned)</label>
+  <label class="check"><input id="earnedOnly" type="checkbox"> Earned only</label>
+  <span class="mini-progress" id="miniProgress"></span>
+  <button id="export" type="button">Export progress</button>
+  <label class="import">Import progress <input id="import" type="file" accept="application/json"></label>
+  <button id="reset" type="button">Reset</button>
+</div>
+
+<p class="count-line" id="countLine"></p>
+<main id="list" class="list"></main>
+<p class="empty" id="empty" hidden>No trophies match these filters. Try clearing the search or choosing another kind.</p>
+
+<footer>
+  <h2>Sources</h2>
+  <p>Official trophy names, descriptions and grades are as PlayStation publishes them, as listed by <strong>Exophase</strong> and <strong>PSNProfiles</strong> (the two lists agree on every name, description and grade). Each trophy's guide below names the guide sources its facts come from — the list is linked per trophy, so a reader sees where each fact comes from. Guide text is written for this entry, in our own words; the official names and descriptions are shown as published. No Rockstar Games logo, artwork or game screenshot is used anywhere in this guide.</p>
+  <ul id="sourceList"></ul>
+  <p class="fine">All 55 trophies are offline and single-player — there are no online trophies in this list. Using cheats disables trophies and saving, so keep cheats off for a trophy run. Progress is saved in your browser (localStorage) and can be exported to a file and imported back.</p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
